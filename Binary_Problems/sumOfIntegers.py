@@ -11,8 +11,7 @@ class Solution:
 
             # And + Shift: Handles carry
             b = ((a & b) << 1) & MASK
-
-            a = temp
+             a = temp
 
         # if a is negative, return its 2's complement
         return a if a <= MAX else ~(a ^ MASK)
